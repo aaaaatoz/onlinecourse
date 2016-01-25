@@ -19,6 +19,7 @@ public class test {
         System.out.println(myquickFindUF.isConnected(2, 3));
         System.out.println(myquickFindUF.isConnected(4, 3));
         System.out.println(myquickFindUF.isConnected(5, 9));
+        System.out.println("=====================");
         //test case for quickUnion
         QuickUnionUF myquickUnionUF = new QuickUnionUF(10);
         myquickUnionUF.union(1,2);
@@ -32,5 +33,19 @@ public class test {
         System.out.println(myquickUnionUF.isConnected(2, 3));
         System.out.println(myquickUnionUF.isConnected(4, 3));
         System.out.println(myquickUnionUF.isConnected(5, 9));
+        System.out.println("=====================");
+        WeightedQuickUnionUF myWeightedQuickUnionUF = new WeightedQuickUnionUF(10);
+        myWeightedQuickUnionUF.union(1,2);
+        myWeightedQuickUnionUF.union(3,4);
+        myWeightedQuickUnionUF.union(5,6);
+        myWeightedQuickUnionUF.union(7,8);
+        myWeightedQuickUnionUF.union(7,9);
+        myWeightedQuickUnionUF.union(2,8);
+        myWeightedQuickUnionUF.union(1,9);
+        myWeightedQuickUnionUF.union(5,0);
+        System.out.println(myWeightedQuickUnionUF.isConnected(2, 3));
+        System.out.println(myWeightedQuickUnionUF.isConnected(4, 3));
+        System.out.println(myWeightedQuickUnionUF.isConnected(5, 9));
+        System.out.println("=====================");
     }
 }
